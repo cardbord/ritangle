@@ -1,9 +1,5 @@
-from math import floor, ceil
-def f(a):
-    return ceil(floor(ceil(floor(a)+a**2)+a**3)+a**4)
-answer_array = []
+from math import floor, ceil; answer_array = []
+def f(a): return ceil(floor(ceil(floor(a)+a**2)+a**3)+a**4)
 for num in range(10000):
-    ans =  f(num/1000) 
-    if not ans in answer_array:
-        answer_array.append(ans)
+    if not f(num/1000) in answer_array: answer_array.append(f(num/1000)) 
 print(answer_array)
