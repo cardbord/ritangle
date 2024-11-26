@@ -14,7 +14,7 @@ for tr in possible_tr:
             
             if not num in sums:   
                 sums.append(num)
-    
+sums.sort()  
 print(sums)
 
 for a in sums:
@@ -22,8 +22,8 @@ for a in sums:
     for i in range(2,a):
         if a % i == 0:
             prime = False
-    if prime and len(str(a)) == 2 and str(a)[0] not in b:
-        b.append(str(a)[0])
+    if prime and len(str(a)) == 2 and str(a) not in b:
+        b.append(str(a))
     else:
         continue
 
@@ -33,3 +33,6 @@ for a in sums:
 
 '''
 print(b)
+
+
+
