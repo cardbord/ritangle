@@ -194,10 +194,10 @@ for tr in possible_tr:
                                                                     teppm = str(nn)
 
                                                                     if len(teppm) == 2 and teppm[1] == str(ac19)[0] and i != 347:
-                                                                        countnums[teppm[0]] +=1
+                                                                        
                                                                         countnums[teppm[1]] +=1
                                                                         countnums[str(i)[0]]+=1
-                                                                        countnums[str(i)[1]]+=1
+                                                                        
                                                                         good = True
                                                                         for iii in countnums:
                                                                             if countnums[iii] > 4:
